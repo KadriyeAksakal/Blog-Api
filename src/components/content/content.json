@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_content_contents",
+  "info": {
+    "displayName": "content",
+    "icon": "align-justify"
+  },
+  "options": {},
+  "attributes": {
+    "iconName": {
+      "type": "string"
+    },
+    "socialMedia": {
+      "type": "string"
+    },
+    "socialMediaAddress": {
+      "type": "richtext"
+    }
+  }
+}

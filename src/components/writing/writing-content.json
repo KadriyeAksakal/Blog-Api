@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_writing_writing_contents",
+  "info": {
+    "displayName": "WritingContent",
+    "icon": "feather",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "media": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "mediaAltText": {
+      "type": "string"
+    },
+    "letter": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}

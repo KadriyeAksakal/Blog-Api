@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "writings",
+  "info": {
+    "singularName": "writing",
+    "pluralName": "writings",
+    "displayName": "Writing",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "bannerTitle": {
+      "type": "string",
+      "required": true
+    },
+    "bannerDesc": {
+      "type": "richtext"
+    },
+    "writingContent": {
+      "type": "component",
+      "repeatable": true,
+      "component": "writing.writing-content"
+    }
+  }
+}
