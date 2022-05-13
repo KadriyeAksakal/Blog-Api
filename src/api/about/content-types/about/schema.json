@@ -4,7 +4,8 @@
   "info": {
     "singularName": "about",
     "pluralName": "abouts",
-    "displayName": "About"
+    "displayName": "About",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -15,6 +16,13 @@
       "type": "string"
     },
     "aboutMe": {
+      "type": "richtext"
+    },
+    "bannerTitle": {
+      "type": "string",
+      "required": true
+    },
+    "bannerDesc": {
       "type": "richtext"
     }
   }
