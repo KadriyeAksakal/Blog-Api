@@ -12,17 +12,21 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "iconName": {
+    "bannerTitle": {
       "type": "string",
       "required": true
     },
-    "socialMediaName": {
-      "type": "string",
-      "required": true
+    "bannerDesc": {
+      "type": "richtext"
     },
-    "socialMediaAddress": {
-      "type": "richtext",
-      "required": true
+    "contentTitle": {
+      "type": "string"
+    },
+    "contact_contents": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::contact-content.contact-content",
+      "mappedBy": "contact"
     }
   }
 }

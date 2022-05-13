@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contact_contents",
+  "info": {
+    "singularName": "contact-content",
+    "pluralName": "contact-contents",
+    "displayName": "ContactContent",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "contact": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::contact.contact",
+      "inversedBy": "contact_contents"
+    },
+    "iconName": {
+      "type": "string",
+      "required": true
+    },
+    "socialMediaName": {
+      "type": "string",
+      "required": true
+    },
+    "socialMediaAddress": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}
