@@ -22,11 +22,11 @@
     "contentTitle": {
       "type": "string"
     },
-    "contact_contents": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::contact-content.contact-content",
-      "mappedBy": "contact"
+    "content": {
+      "displayName": "content",
+      "type": "component",
+      "repeatable": true,
+      "component": "content.content"
     }
   }
 }
