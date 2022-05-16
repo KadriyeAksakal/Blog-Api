@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "experience_contents",
+  "info": {
+    "singularName": "experience-content",
+    "pluralName": "experience-contents",
+    "displayName": "ExperienceContent",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "companyName": {
+      "type": "string",
+      "required": true
+    },
+    "media": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "mediaAltText": {
+      "type": "string"
+    },
+    "companyExperience": {
+      "type": "richtext",
+      "required": true
+    },
+    "experience": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::experience.experience",
+      "inversedBy": "experience_contents"
+    },
+    "position": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
