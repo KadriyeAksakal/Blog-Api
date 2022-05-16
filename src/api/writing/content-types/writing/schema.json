@@ -19,10 +19,11 @@
     "bannerDesc": {
       "type": "richtext"
     },
-    "writingContent": {
-      "type": "component",
-      "repeatable": true,
-      "component": "writing.writing-content"
+    "writing_contents": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::writing-content.writing-content",
+      "mappedBy": "writing"
     }
   }
 }
